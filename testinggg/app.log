@@ -1,0 +1,31 @@
+2025-02-02 17:36:04,079 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-02 17:36:04,079 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 17:36:04,081 - INFO -  * Restarting with stat
+2025-02-02 17:36:04,679 - WARNING -  * Debugger is active!
+2025-02-02 17:36:04,682 - INFO -  * Debugger PIN: 109-181-002
+2025-02-02 17:36:07,203 - INFO - 127.0.0.1 - - [02/Feb/2025 17:36:07] "GET / HTTP/1.1" 200 -
+2025-02-02 17:36:07,365 - INFO - 127.0.0.1 - - [02/Feb/2025 17:36:07] "[35m[1mGET /static/videos/csbackground.mp4 HTTP/1.1[0m" 206 -
+2025-02-02 17:36:14,806 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:17,204 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:17,209 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:20,481 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:20,486 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:23,078 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:23,082 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:26,165 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:26,168 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:31,283 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:31,287 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:34,016 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:34,019 - DEBUG - Starting new HTTPS connection (1): api.hyperbolic.xyz:443
+2025-02-02 17:36:38,003 - DEBUG - https://api.hyperbolic.xyz:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-02-02 17:36:38,114 - INFO - 127.0.0.1 - - [02/Feb/2025 17:36:38] "POST /solve HTTP/1.1" 200 -
+2025-02-02 17:36:58,616 - INFO - 127.0.0.1 - - [02/Feb/2025 17:36:58] "[35m[1mGET /static/videos/csbackground.mp4 HTTP/1.1[0m" 206 -
+2025-02-02 17:36:58,626 - INFO - 127.0.0.1 - - [02/Feb/2025 17:36:58] "[35m[1mGET /static/videos/csbackground.mp4 HTTP/1.1[0m" 206 -
+2025-02-02 17:38:41,716 - INFO -  * Detected change in 'c:\\Users\\THARAN\\Documents\\testinggg\\wsgi.py', reloading
+2025-02-02 17:38:41,839 - INFO -  * Restarting with stat
+2025-02-02 17:38:42,539 - WARNING -  * Debugger is active!
+2025-02-02 17:38:42,542 - INFO -  * Debugger PIN: 109-181-002
+2025-02-02 17:38:44,649 - INFO -  * Detected change in 'c:\\Users\\THARAN\\Documents\\testinggg\\app.py', reloading
+2025-02-02 17:38:44,792 - INFO -  * Restarting with stat

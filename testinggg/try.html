@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PDF Coding Problem Solver</title>
+<style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>PDF Coding Problem Solver</h1>
+<form id="uploadForm" enctype="multipart/form-data">
+  <label for="file">Upload PDF:</label>
+  <input type="file" id="file" name="file" accept=".pdf">
+  <button type="submit">Submit</button>
+</form>
+<div id="message"></div>
+
+<script>
+const form = document.getElementById('uploadForm');
+const messageDiv = document.getElementById('message');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  messageDiv.textContent = 'Processing...';
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('/solve', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (response.ok) {
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'CodingSolutions.docx';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      messageDiv.textContent = 'Download complete!';
+    } else {
+      const errorData = await response.json();
+      messageDiv.textContent = `Error: ${errorData.error}`;
+    }
+  } catch (error) {
+    messageDiv.textContent = 'Error: Could not connect to the server.';
+  }
+});
+</script>
+</body>
+</html>
